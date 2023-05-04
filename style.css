@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.table-wrap{
+    position: relative;
+    z-index: 0;
+    margin: 30px;
+}
+
+.game {
+    margin-bottom: 20px;
+}
+
+table, tr, td {
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+
+}
+
+#pin {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: gold;
+    transform: translate(-50%, -50%);
+}
+
+.buttons {
+    margin-top: 30px;
+    margin-left: 150px;
+    color:#281E5D;
+}
+
+.mainSt {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    background-color: #89CFF0;
+    border: 1px solid #281E5D;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: all 0.5s;
+}
+
+.inPress {
+    transform: scale(1.1);
+    border-color: black;
+    background-color: white;
+    box-shadow: 0 0 10px #281E5D;
+    color: black;
+}
